@@ -101,11 +101,20 @@
         },
         {
             "authorLogin": "lene&kirill",
-            "taskId": "0-10",
-            "taskName": "Simple: Completion with dot",
+            "taskId": "0-11",
+            "taskName": "Simple: Completion with Dot",
             "fileName": "CompletionWithDot.php",
             "initialCode": "<?php\n\nnew MyCla\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
             "targetCode": "<?php\n\n(new MyClass())->perform();\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
+            "initialOffset": 16
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-12",
+            "taskName": "Simple: Replacing Competion",
+            "fileName": "ReplacingCompletion.php",
+            "initialCode": "<?php\n\nnew MyClassThatWasTypedIn\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
+            "targetCode": "<?php\n\nnew MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
             "initialOffset": 16
         },
         {

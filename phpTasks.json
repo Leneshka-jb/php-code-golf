@@ -79,10 +79,17 @@
     },
     {
       "authorLogin": "lene&kirill",
-      "taskId": "0-10",
-      "taskName": "Simple: Completion with dot",
+      "taskId": "0-11",
+      "taskName": "Simple: Completion with Dot",
       "fileName": "CompletionWithDot.php",
       "source": "completion/CompletionWithDot.php"
+    },
+    {
+      "authorLogin": "lene&kirill",
+      "taskId": "0-12",
+      "taskName": "Simple: Replacing Competion",
+      "fileName": "ReplacingCompletion.php",
+      "source": "completion/ReplacingCompletion.php"
     },
     {
       "authorLogin": "pronskiy",
