@@ -66,7 +66,7 @@
         {
             "authorLogin": "pronskiy",
             "taskId": "0-7",
-            "taskName": "Simple: HTTP Request",
+            "taskName": "Simple: HTTP request",
             "fileName": "GetRequest.http",
             "initialCode": "",
             "targetCode": "GET http:\/\/httpbin.org\/uuid\nAccept: application\/json\n\n###",
@@ -102,7 +102,7 @@
         {
             "authorLogin": "lene&kirill",
             "taskId": "0-11",
-            "taskName": "Simple: Completion with Dot",
+            "taskName": "Simple: Completion with dot",
             "fileName": "CompletionWithDot.php",
             "initialCode": "<?php\n\nnew MyCla\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
             "targetCode": "<?php\n\n(new MyClass())->perform();\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
@@ -111,7 +111,7 @@
         {
             "authorLogin": "lene&kirill",
             "taskId": "0-12",
-            "taskName": "Simple: Replacing Competion",
+            "taskName": "Simple: Replacing competion",
             "fileName": "ReplacingCompletion.php",
             "initialCode": "<?php\n\nnew MyClassThatWasTypedIn\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
             "targetCode": "<?php\n\nnew MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
@@ -120,7 +120,7 @@
         {
             "authorLogin": "pronskiy",
             "taskId": "0-21",
-            "taskName": "Medium: String Juggling",
+            "taskName": "Medium: String juggling",
             "fileName": "StringJuggling.php",
             "initialCode": "<?php\n\necho 'There are 5 monkeys in the tree.';\n\necho sprintf('The %2$s contains %1$d monkeys.\nThat\\'s a nice %2$s full of %1$d monkeys.', $num, $location);",
             "targetCode": "<?php\n\n$num = '5';\n$location = 'tree';\necho sprintf(\"There are %s monkeys in the %s.\", $num, $location);\n\necho \"The {$location} contains {$num} monkeys.\nThat's a nice {$location} full of {$num} monkeys.\";",
@@ -138,7 +138,7 @@
         {
             "authorLogin": "pronskiy",
             "taskId": "0-23",
-            "taskName": "Medium: Service Injection",
+            "taskName": "Medium: Service injection",
             "fileName": "ServiceInjection.php",
             "initialCode": "<?php\nnamespace ServiceInjection;\n\nclass Controller\n{\n    \/**\n     * Controller constructor.\n     *\/\n    public function __construct()\n    {\n    }\n\n    public function action()\n    {\n        $service->process($order);\n    }\n}\n\nclass Service\n{\n    public function process(Order $order)\n    {\n        \/\/ =^_^= \\\\\n    }\n}\n\nclass Order\n{\n}",
             "targetCode": "<?php\nnamespace ServiceInjection;\n\nclass Controller\n{\n    \/** @var Service *\/\n    private $service;\n\n    \/**\n     * Controller constructor.\n     * @param Service $service\n     *\/\n    public function __construct(Service $service)\n    {\n        $this->service = $service;\n    }\n\n    public function action($order)\n    {\n        $this->service->process($order);\n    }\n}\n\nclass Service\n{\n    public function process(Order $order)\n    {\n        \/\/ =^_^= \\\\\n    }\n}\n\nclass Order\n{\n}",
@@ -165,7 +165,7 @@
         {
             "authorLogin": "lene&kirill",
             "taskId": "0-42",
-            "taskName": "Demo: Completion with Alias",
+            "taskName": "Demo: Completion with alias",
             "fileName": "CompletionWithAlias.php",
             "initialCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    $a = new MyCla\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",
             "targetCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    use TheNamespace\\MyClass as MyClassAlias;\n\n    $a = new MyClassAlias();\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",

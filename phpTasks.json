@@ -52,7 +52,7 @@
     {
       "authorLogin": "pronskiy",
       "taskId": "0-7",
-      "taskName": "Simple: HTTP Request",
+      "taskName": "Simple: HTTP request",
       "fileName": "GetRequest.http",
       "source": "liveTemplates/GetRequest.http"
     },
@@ -80,21 +80,21 @@
     {
       "authorLogin": "lene&kirill",
       "taskId": "0-11",
-      "taskName": "Simple: Completion with Dot",
+      "taskName": "Simple: Completion with dot",
       "fileName": "CompletionWithDot.php",
       "source": "completion/CompletionWithDot.php"
     },
     {
       "authorLogin": "lene&kirill",
       "taskId": "0-12",
-      "taskName": "Simple: Replacing Competion",
+      "taskName": "Simple: Replacing competion",
       "fileName": "ReplacingCompletion.php",
       "source": "completion/ReplacingCompletion.php"
     },
     {
       "authorLogin": "pronskiy",
       "taskId": "0-21",
-      "taskName": "Medium: String Juggling",
+      "taskName": "Medium: String juggling",
       "fileName": "StringJuggling.php",
       "source": "StringJuggling.php"
     },
@@ -108,7 +108,7 @@
     {
       "authorLogin": "pronskiy",
       "taskId": "0-23",
-      "taskName": "Medium: Service Injection",
+      "taskName": "Medium: Service injection",
       "fileName": "ServiceInjection.php",
       "source": "ServiceInjection.php"
     },
@@ -129,7 +129,7 @@
     {
       "authorLogin": "lene&kirill",
       "taskId": "0-42",
-      "taskName": "Demo: Completion with Alias",
+      "taskName": "Demo: Completion with alias",
       "fileName": "CompletionWithAlias.php",
       "source": "completion/DemoCompletionWithAlias.php"
     }
