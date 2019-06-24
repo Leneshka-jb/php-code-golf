@@ -104,6 +104,13 @@
       "taskName": "Medium: Service Injection",
       "fileName": "ServiceInjection.php",
       "source": "ServiceInjection.php"
+    },
+    {
+      "authorLogin": "lene&kirill",
+      "taskId": "0-40",
+      "taskName": "Demo: Completion with variable intoduction",
+      "fileName": "CompletionWithExtractVariable.php",
+      "source": "completion/DemoCompletionWithNewVariable.php"
     }
   ]
 }
