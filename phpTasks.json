@@ -111,6 +111,13 @@
       "taskName": "Demo: Completion with variable intoduction",
       "fileName": "CompletionWithExtractVariable.php",
       "source": "completion/DemoCompletionWithNewVariable.php"
+    },
+    {
+      "authorLogin": "lene&kirill",
+      "taskId": "0-41",
+      "taskName": "Demo: Complete current statement",
+      "fileName": "CompleteCurrentStatement.php",
+      "source": "completion/DemoCompleteCurrentStatement.php"
     }
   ]
 }

@@ -104,8 +104,8 @@
             "taskId": "0-10",
             "taskName": "Simple: Completion with dot",
             "fileName": "CompletionWithDot.php",
-            "initialCode": "<?php\n\nnew MyCla\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx{}",
-            "targetCode": "<?php\n\n(new MyClass())->perform();\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx{}",
+            "initialCode": "<?php\n\nnew MyCla\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
+            "targetCode": "<?php\n\n(new MyClass())->perform();\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
             "initialOffset": 16
         },
         {
@@ -143,6 +143,15 @@
             "initialCode": "<?php\n\n\/**\n *  Invoke extracting new variable (Ctrl+Alt+V\/Cmd+Alt+V) during completion\n *\/\nnew MyCla\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
             "targetCode": "<?php\n\n\/**\n *  Invoke extracting new variable (Ctrl+Alt+V\/Cmd+Alt+V) during completion\n *\/\n$myClass = new MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
             "initialOffset": 100
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-41",
+            "taskName": "Demo: Complete current statement",
+            "fileName": "CompleteCurrentStatement.php",
+            "initialCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyCla\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
+            "targetCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
+            "initialOffset": 96
         }
     ]
 }
