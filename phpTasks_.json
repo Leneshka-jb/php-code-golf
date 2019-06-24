@@ -161,6 +161,15 @@
             "initialCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyCla\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
             "targetCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
             "initialOffset": 96
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-42",
+            "taskName": "Demo: Completion with Alias",
+            "fileName": "CompletionWithAlias.php",
+            "initialCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    $a = new MyCla\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",
+            "targetCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    use TheNamespace\\MyClass as MyClassAlias;\n\n    $a = new MyClassAlias();\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",
+            "initialOffset": 106
         }
     ]
 }

@@ -125,6 +125,13 @@
       "taskName": "Demo: Complete current statement",
       "fileName": "CompleteCurrentStatement.php",
       "source": "completion/DemoCompleteCurrentStatement.php"
+    },
+    {
+      "authorLogin": "lene&kirill",
+      "taskId": "0-42",
+      "taskName": "Demo: Completion with Alias",
+      "fileName": "CompletionWithAlias.php",
+      "source": "completion/DemoCompletionWithAlias.php"
     }
   ]
 }
