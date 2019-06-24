@@ -92,12 +92,21 @@
         },
         {
             "authorLogin": "lene",
-            "taskId": "0-20",
+            "taskId": "0-10",
             "taskName": "Simple: Introduce new parameter",
             "fileName": "NewParameter.php",
             "initialCode": "<?php\n\nnamespace Importer {\n    class Importer\n    {\n        public function __construct(\\Importable\\ImportMe $class)\n        {\n        }\n    }\n}\n\n\nnamespace Importable {\n    class ImportMe\n    {\n\n    }\n}",
             "targetCode": "<?php\n\nnamespace Importer {\n\n    use Importable\\ImportMe;\n\n    class Importer\n    {\n        \/**\n         * @var ImportMe\n         *\/\n        private $class;\n\n        \/**\n         * Importer constructor.\n         * @param ImportMe $class\n         *\/\n        public function __construct(ImportMe $class)\n        {\n            $this->class = $class;\n        }\n    }\n}\n\n\nnamespace Importable {\n    class ImportMe\n    {\n\n    }\n}",
             "initialOffset": 101
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-10",
+            "taskName": "Simple: Completion with dot",
+            "fileName": "CompletionWithDot.php",
+            "initialCode": "<?php\n\nnew MyCla\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx{}",
+            "targetCode": "<?php\n\n(new MyClass())->perform();\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx{}",
+            "initialOffset": 16
         },
         {
             "authorLogin": "pronskiy",
