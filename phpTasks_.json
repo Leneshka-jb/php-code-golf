@@ -145,6 +145,15 @@
             "initialOffset": 197
         },
         {
+            "authorLogin": "lene",
+            "taskId": "0-30",
+            "taskName": "Probe: DTO",
+            "fileName": "DTO.php",
+            "initialCode": "<?php\n\nclass Order\n{\n    \n}",
+            "targetCode": "<?php\n\nclass Order\n{\n    \/**\n     * @var int\n     *\/\n    private $id;\n\n    \/**\n     * @var DateTimeImmutable\n     *\/\n    private $date;\n\n    \/**\n     * Order constructor.\n     * @param int $id\n     * @param DateTimeImmutable $date\n     *\/\n    public function __construct(int $id, DateTimeImmutable $date)\n    {\n        $this->id = $id;\n        $this->date = $date;\n    }\n\n    \/**\n     * @return int\n     *\/\n    public function getId(): int\n    {\n        return $this->id;\n    }\n\n    \/**\n     * @param int $id\n     *\/\n    public function setId(int $id): void\n    {\n        $this->id = $id;\n    }\n\n    \/**\n     * @return DateTimeImmutable\n     *\/\n    public function getDate(): DateTimeImmutable\n    {\n        return $this->date;\n    }\n\n    \/**\n     * @param DateTimeImmutable $date\n     *\/\n    public function setDate(DateTimeImmutable $date): void\n    {\n        $this->date = $date;\n    }\n}",
+            "initialOffset": 25
+        },
+        {
             "authorLogin": "lene&kirill",
             "taskId": "0-40",
             "taskName": "Demo: Completion with variable intoduction",
