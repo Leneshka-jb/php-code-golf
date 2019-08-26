@@ -9,13 +9,6 @@
     },
     {
       "authorLogin": "lene",
-      "taskId": "0-1",
-      "taskName": "Simple: Generate method",
-      "fileName": "GenerateMethod.php",
-      "source": "altEnter/GenerateMethod.php"
-    },
-    {
-      "authorLogin": "lene",
       "taskId": "0-2",
       "taskName": "Simple: Implement interface",
       "fileName": "ImplementInterface.php",

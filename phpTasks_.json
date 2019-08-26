@@ -11,15 +11,6 @@
         },
         {
             "authorLogin": "lene",
-            "taskId": "0-1",
-            "taskName": "Simple: Generate method",
-            "fileName": "GenerateMethod.php",
-            "initialCode": "<?php\n\nclass Printer\n{\n    public function printGreeting(string $name)\n    {\n        $this->printText(\"Hello, \" . $name);\n    }\n}",
-            "targetCode": "<?php\n\nclass Printer\n{\n    public function printGreeting(string $name)\n    {\n        $this->printText(\"Hello, \" . $name);\n    }\n\n    private function printText(string $string)\n    {\n        echo $string;\n    }\n}",
-            "initialOffset": 92
-        },
-        {
-            "authorLogin": "lene",
             "taskId": "0-2",
             "taskName": "Simple: Implement interface",
             "fileName": "ImplementInterface.php",
