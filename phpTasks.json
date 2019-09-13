@@ -2,13 +2,6 @@
   "tasks": [
     {
       "authorLogin": "lene",
-      "taskId": "0-0",
-      "taskName": "Simple: Reuse result",
-      "fileName": "ReuseResult.php",
-      "source": "refactoring/ExtractVariable.php"
-    },
-    {
-      "authorLogin": "lene",
       "taskId": "0-2",
       "taskName": "Simple: Implement interface",
       "fileName": "ImplementInterface.php",
@@ -43,6 +36,13 @@
       "source": "altEnter/Cleanup.php"
     },
     {
+      "authorLogin": "lene",
+      "taskId": "0-6-1",
+      "taskName": "Simple: Reuse result",
+      "fileName": "ReuseResult.php",
+      "source": "refactoring/ExtractVariable.php"
+    },
+    {
       "authorLogin": "pronskiy",
       "taskId": "0-7",
       "taskName": "Simple: HTTP request",
@@ -72,15 +72,8 @@
     },
     {
       "authorLogin": "lene&kirill",
-      "taskId": "0-11",
-      "taskName": "Simple: Completion with dot",
-      "fileName": "CompletionWithDot.php",
-      "source": "completion/CompletionWithDot.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
       "taskId": "0-12",
-      "taskName": "Simple: Replacing competion",
+      "taskName": "Simple: Replacing completion",
       "fileName": "ReplacingCompletion.php",
       "source": "completion/ReplacingCompletion.php"
     },
@@ -104,34 +97,6 @@
       "taskName": "Medium: Service injection",
       "fileName": "ServiceInjection.php",
       "source": "ServiceInjection.php"
-    },
-    {
-      "authorLogin": "lene",
-      "taskId": "0-30",
-      "taskName": "Probe: DTO",
-      "fileName": "DTO.php",
-      "source": "probe/DTO.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-40",
-      "taskName": "Demo: Completion with variable intoduction",
-      "fileName": "CompletionWithExtractVariable.php",
-      "source": "completion/DemoCompletionWithNewVariable.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-41",
-      "taskName": "Demo: Complete current statement",
-      "fileName": "CompleteCurrentStatement.php",
-      "source": "completion/DemoCompleteCurrentStatement.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-42",
-      "taskName": "Demo: Completion with alias",
-      "fileName": "CompletionWithAlias.php",
-      "source": "completion/DemoCompletionWithAlias.php"
     }
   ]
 }

@@ -1,11 +1,3 @@
 <?php
 
-new MyCla/*caret*/ssThatWasTypedIn
-
-class MyClass
-{
-}
-
-class MyClassEx
-{
-}
+var_/*caret*/dump('Tab me');
