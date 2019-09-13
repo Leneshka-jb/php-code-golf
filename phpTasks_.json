@@ -104,9 +104,9 @@
             "taskId": "0-12",
             "taskName": "Simple: Replacing competion",
             "fileName": "ReplacingCompletion.php",
-            "initialCode": "<?php\n\nnew MyClassThatWasTypedIn\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
-            "targetCode": "<?php\n\nnew MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
-            "initialOffset": 16
+            "initialCode": "<?php\n\nvar_dump('Tab me');",
+            "targetCode": "<?php\n\nvar_export('Tab me');",
+            "initialOffset": 11
         },
         {
             "authorLogin": "pronskiy",
