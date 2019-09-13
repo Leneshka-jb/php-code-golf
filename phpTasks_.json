@@ -134,42 +134,6 @@
             "initialCode": "<?php\nnamespace ServiceInjection;\n\nclass Controller\n{\n    \/**\n     * Controller constructor.\n     *\/\n    public function __construct()\n    {\n    }\n\n    public function action()\n    {\n        $service->process($order);\n    }\n}\n\nclass Service\n{\n    public function process(Order $order)\n    {\n        \/\/ =^_^= \\\\\n    }\n}\n\nclass Order\n{\n}",
             "targetCode": "<?php\nnamespace ServiceInjection;\n\nclass Controller\n{\n    \/** @var Service *\/\n    private $service;\n\n    \/**\n     * Controller constructor.\n     * @param Service $service\n     *\/\n    public function __construct(Service $service)\n    {\n        $this->service = $service;\n    }\n\n    public function action($order)\n    {\n        $this->service->process($order);\n    }\n}\n\nclass Service\n{\n    public function process(Order $order)\n    {\n        \/\/ =^_^= \\\\\n    }\n}\n\nclass Order\n{\n}",
             "initialOffset": 197
-        },
-        {
-            "authorLogin": "lene",
-            "taskId": "0-30",
-            "taskName": "Probe: DTO",
-            "fileName": "DTO.php",
-            "initialCode": "<?php\n\nclass Order\n{\n    \n}",
-            "targetCode": "<?php\n\nclass Order\n{\n    \/**\n     * @var int\n     *\/\n    private $id;\n\n    \/**\n     * @var DateTimeImmutable\n     *\/\n    private $date;\n\n    \/**\n     * Order constructor.\n     * @param int $id\n     * @param DateTimeImmutable $date\n     *\/\n    public function __construct(int $id, DateTimeImmutable $date)\n    {\n        $this->id = $id;\n        $this->date = $date;\n    }\n\n    \/**\n     * @return int\n     *\/\n    public function getId(): int\n    {\n        return $this->id;\n    }\n\n    \/**\n     * @param int $id\n     *\/\n    public function setId(int $id): void\n    {\n        $this->id = $id;\n    }\n\n    \/**\n     * @return DateTimeImmutable\n     *\/\n    public function getDate(): DateTimeImmutable\n    {\n        return $this->date;\n    }\n\n    \/**\n     * @param DateTimeImmutable $date\n     *\/\n    public function setDate(DateTimeImmutable $date): void\n    {\n        $this->date = $date;\n    }\n}",
-            "initialOffset": 25
-        },
-        {
-            "authorLogin": "lene&kirill",
-            "taskId": "0-40",
-            "taskName": "Demo: Completion with variable intoduction",
-            "fileName": "CompletionWithExtractVariable.php",
-            "initialCode": "<?php\n\n\/**\n *  Invoke extracting new variable (Ctrl+Alt+V\/Cmd+Alt+V) during completion\n *\/\nnew MyCla\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
-            "targetCode": "<?php\n\n\/**\n *  Invoke extracting new variable (Ctrl+Alt+V\/Cmd+Alt+V) during completion\n *\/\n$myClass = new MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
-            "initialOffset": 100
-        },
-        {
-            "authorLogin": "lene&kirill",
-            "taskId": "0-41",
-            "taskName": "Demo: Complete current statement",
-            "fileName": "CompleteCurrentStatement.php",
-            "initialCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyCla\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
-            "targetCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
-            "initialOffset": 96
-        },
-        {
-            "authorLogin": "lene&kirill",
-            "taskId": "0-42",
-            "taskName": "Demo: Completion with alias",
-            "fileName": "CompletionWithAlias.php",
-            "initialCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    $a = new MyCla\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",
-            "targetCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    use TheNamespace\\MyClass as MyClassAlias;\n\n    $a = new MyClassAlias();\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",
-            "initialOffset": 106
         }
     ]
 }

@@ -104,34 +104,6 @@
       "taskName": "Medium: Service injection",
       "fileName": "ServiceInjection.php",
       "source": "ServiceInjection.php"
-    },
-    {
-      "authorLogin": "lene",
-      "taskId": "0-30",
-      "taskName": "Probe: DTO",
-      "fileName": "DTO.php",
-      "source": "probe/DTO.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-40",
-      "taskName": "Demo: Completion with variable intoduction",
-      "fileName": "CompletionWithExtractVariable.php",
-      "source": "completion/DemoCompletionWithNewVariable.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-41",
-      "taskName": "Demo: Complete current statement",
-      "fileName": "CompleteCurrentStatement.php",
-      "source": "completion/DemoCompleteCurrentStatement.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-42",
-      "taskName": "Demo: Completion with alias",
-      "fileName": "CompletionWithAlias.php",
-      "source": "completion/DemoCompletionWithAlias.php"
     }
   ]
 }
