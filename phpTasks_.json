@@ -2,16 +2,7 @@
     "tasks": [
         {
             "authorLogin": "lene",
-            "taskId": "0-0",
-            "taskName": "Simple: Reuse result",
-            "fileName": "ReuseResult.php",
-            "initialCode": "<?php\n\n$title = getSizeOfBasket() . \" inside\";\n$description = \"There are \" . getSizeOfBasket() . \"in your basket\";\n$promo = \"You have \" . getSizeOfBasket() . \" in your basket. \n    Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
-            "targetCode": "<?php\n\n$size = getSizeOfBasket();\n$title = $size . \" inside\";\n$description = \"There are \" . $size . \"in your basket\";\n$promo = \"You have \" . $size . \" in your basket. \n    Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
-            "initialOffset": 16
-        },
-        {
-            "authorLogin": "lene",
-            "taskId": "0-2",
+            "taskId": "0-1",
             "taskName": "Simple: Implement interface",
             "fileName": "ImplementInterface.php",
             "initialCode": "<?php\n\ninterface WorldSaver\n{\n    public function makeEverythingWork();\n\n    public function readUsersMind($user);\n\n    public function implementUsersDreams();\n}\n\nclass Developer implements \n{\n\n}",
@@ -20,7 +11,7 @@
         },
         {
             "authorLogin": "bzixilu",
-            "taskId": "0-3",
+            "taskId": "0-2",
             "taskName": "Simple: Delete unused method",
             "fileName": "DeleteUnusedMethod.php",
             "initialCode": "<?php\n\nclass DeleteUnusedMethod\n{\n    private function unusedMethod() {\n        \/\/this method is not used any more\n    }\n}",
@@ -29,7 +20,7 @@
         },
         {
             "authorLogin": "lene",
-            "taskId": "0-4",
+            "taskId": "0-3",
             "taskName": "Simple: Import namespace",
             "fileName": "ImportNamespace.php",
             "initialCode": "<?php\n\nnamespace CurrentNamespace {\n    new ClassINeed;\n}\n\nnamespace FancyNamespaceWithTooManySymbolsInName {\n    class ClassINeed\n    {\n    }\n}",
@@ -38,7 +29,7 @@
         },
         {
             "authorLogin": "lene",
-            "taskId": "0-5",
+            "taskId": "0-4",
             "taskName": "Simple: Update PHPDoc",
             "fileName": "UpdatePHPDoc.php",
             "initialCode": "<?php\n\n\/**\n * @param array $params\n *\/\nfunction changedFunction(array $params, int $index): float\n{\n    if ($index < 0) {\n        throw new Exception($index);\n    }\n    return $params[$index];\n}",
@@ -47,12 +38,21 @@
         },
         {
             "authorLogin": "lene",
-            "taskId": "0-6",
+            "taskId": "0-5",
             "taskName": "Simple: Cleanup FQNs",
             "fileName": "Cleanup.php",
             "initialCode": "<?php\n\nnamespace Impl {\n    function handle(): \\Some\\Very\\Long\\Name\\Entity\n    {\n       return new \\Some\\Very\\Long\\Name\\Element();\n    }\n}\n\nnamespace Some\\Very\\Long\\Name {\n    interface Entity\n    {\n    }\n\n    class Element implements Entity\n    {\n    }\n}",
             "targetCode": "<?php\n\nnamespace Impl {\n\n    use Some\\Very\\Long\\Name\\Element;\n    use Some\\Very\\Long\\Name\\Entity;\n\n    function handle(): Entity\n    {\n        return new Element();\n    }\n}\n\nnamespace Some\\Very\\Long\\Name {\n    interface Entity\n    {\n    }\n\n    class Element implements Entity\n    {\n    }\n}",
             "initialOffset": 115
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-6",
+            "taskName": "Simple: Reuse result",
+            "fileName": "ReuseResult.php",
+            "initialCode": "<?php\n\n$title = getSizeOfBasket() . \" inside\";\n$description = \"There are \" . getSizeOfBasket() . \"in your basket\";\n$promo = \"You have \" . getSizeOfBasket() . \" in your basket. \n    Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
+            "targetCode": "<?php\n\n$size = getSizeOfBasket();\n$title = $size . \" inside\";\n$description = \"There are \" . $size . \"in your basket\";\n$promo = \"You have \" . $size . \" in your basket. \n    Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
+            "initialOffset": 16
         },
         {
             "authorLogin": "pronskiy",

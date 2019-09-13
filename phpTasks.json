@@ -2,45 +2,45 @@
   "tasks": [
     {
       "authorLogin": "lene",
-      "taskId": "0-0",
-      "taskName": "Simple: Reuse result",
-      "fileName": "ReuseResult.php",
-      "source": "refactoring/ExtractVariable.php"
-    },
-    {
-      "authorLogin": "lene",
-      "taskId": "0-2",
+      "taskId": "0-1",
       "taskName": "Simple: Implement interface",
       "fileName": "ImplementInterface.php",
       "source": "altEnter/ImplementInterface.php"
     },
     {
       "authorLogin": "bzixilu",
-      "taskId": "0-3",
+      "taskId": "0-2",
       "taskName": "Simple: Delete unused method",
       "fileName": "DeleteUnusedMethod.php",
       "source": "altEnter/DeleteUnusedMethod.php"
     },
     {
       "authorLogin": "lene",
-      "taskId": "0-4",
+      "taskId": "0-3",
       "taskName": "Simple: Import namespace",
       "fileName": "ImportNamespace.php",
       "source": "altEnter/ImportNamespace.php"
     },
     {
       "authorLogin": "lene",
-      "taskId": "0-5",
+      "taskId": "0-4",
       "taskName": "Simple: Update PHPDoc",
       "fileName": "UpdatePHPDoc.php",
       "source": "altEnter/UpdatePHPDoc.php"
     },
     {
       "authorLogin": "lene",
-      "taskId": "0-6",
+      "taskId": "0-5",
       "taskName": "Simple: Cleanup FQNs",
       "fileName": "Cleanup.php",
       "source": "altEnter/Cleanup.php"
+    },
+    {
+      "authorLogin": "lene",
+      "taskId": "0-6",
+      "taskName": "Simple: Reuse result",
+      "fileName": "ReuseResult.php",
+      "source": "refactoring/ExtractVariable.php"
     },
     {
       "authorLogin": "pronskiy",
