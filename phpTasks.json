@@ -16,24 +16,10 @@
     },
     {
       "authorLogin": "lene",
-      "taskId": "0-3",
-      "taskName": "Simple: Import namespace",
-      "fileName": "ImportNamespace.php",
-      "source": "altEnter/ImportNamespace.php"
-    },
-    {
-      "authorLogin": "lene",
       "taskId": "0-4",
       "taskName": "Simple: Update PHPDoc",
       "fileName": "UpdatePHPDoc.php",
       "source": "altEnter/UpdatePHPDoc.php"
-    },
-    {
-      "authorLogin": "lene",
-      "taskId": "0-5",
-      "taskName": "Simple: Cleanup FQNs",
-      "fileName": "Cleanup.php",
-      "source": "altEnter/Cleanup.php"
     },
     {
       "authorLogin": "lene",
@@ -57,25 +43,11 @@
       "source": "liveTemplates/Foreach.php"
     },
     {
-      "authorLogin": "bzixilu",
-      "taskId": "0-9",
-      "taskName": "Simple: Surround with condition",
-      "fileName": "Odd.php",
-      "source": "surroundWith/ConditionOdd.php"
-    },
-    {
       "authorLogin": "lene",
       "taskId": "0-10",
       "taskName": "Simple: Introduce new parameter",
       "fileName": "NewParameter.php",
       "source": "altEnter/IntroduceNewParameter.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-11",
-      "taskName": "Simple: Completion with dot",
-      "fileName": "CompletionWithDot.php",
-      "source": "completion/CompletionWithDot.php"
     },
     {
       "authorLogin": "lene&kirill",
@@ -97,41 +69,6 @@
       "taskName": "Medium: Immutable DTO",
       "fileName": "ImmutableDTO.php",
       "source": "ImmutableDTO.php"
-    },
-    {
-      "authorLogin": "pronskiy",
-      "taskId": "0-23",
-      "taskName": "Medium: Service injection",
-      "fileName": "ServiceInjection.php",
-      "source": "ServiceInjection.php"
-    },
-    {
-      "authorLogin": "lene",
-      "taskId": "0-30",
-      "taskName": "Probe: DTO",
-      "fileName": "DTO.php",
-      "source": "probe/DTO.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-40",
-      "taskName": "Demo: Completion with variable intoduction",
-      "fileName": "CompletionWithExtractVariable.php",
-      "source": "completion/DemoCompletionWithNewVariable.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-41",
-      "taskName": "Demo: Complete current statement",
-      "fileName": "CompleteCurrentStatement.php",
-      "source": "completion/DemoCompleteCurrentStatement.php"
-    },
-    {
-      "authorLogin": "lene&kirill",
-      "taskId": "0-42",
-      "taskName": "Demo: Completion with alias",
-      "fileName": "CompletionWithAlias.php",
-      "source": "completion/DemoCompletionWithAlias.php"
     }
   ]
 }
