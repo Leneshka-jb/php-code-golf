@@ -3,7 +3,8 @@
 $positionMarker = '/*caret*/';
 $positionMarkerPattern = '/\/\*caret\*\//';
 
-$json = json_decode(file_get_contents(__DIR__ . '/phpTasks.json'));
+$fileName = 'phpTasks';
+$json = json_decode(file_get_contents(__DIR__ . '/' . $fileName . '.json'));
 
 foreach ($json->tasks as &$task) {
     ['filename' => $filename, 'extension' => $extension] = pathinfo($task->source);
@@ -25,4 +26,4 @@ foreach ($json->tasks as &$task) {
     unset($task->source);
 }
 
-file_put_contents(__DIR__ . '/phpTasks_.json' , json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+file_put_contents(__DIR__ . '/' . $fileName . '_.json', json_encode($json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
