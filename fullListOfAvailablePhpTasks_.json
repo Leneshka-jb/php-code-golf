@@ -64,8 +64,17 @@
             "initialOffset": 16
         },
         {
-            "authorLogin": "pronskiy",
+            "authorLogin": "lene",
             "taskId": "0-8",
+            "taskName": "Simple: Reuse code",
+            "fileName": "ReuseCode.php",
+            "initialCode": "<?php\n\n$description = \"There are \" .\n    (getSizeOfBasket() == 0 ? \"No goods\" : getSizeOfBasket() . \" goods\") .\n    \"in your basket\";\n$promo = \"You have \" .\n    (getSizeOfBasket() == 0 ? \"No goods\" : getSizeOfBasket() . \" goods\") .\n    \" in your basket. Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
+            "targetCode": "<?php\n\n\/**\n * @return string\n *\/\nfunction getGoodsDescription(): string\n{\n    return (getSizeOfBasket() == 0 ? \"No goods\" : getSizeOfBasket() . \" goods\");\n}\n\n$description = \"There are \" .\n    getGoodsDescription() .\n    \"in your basket\";\n$promo = \"You have \" .\n    getGoodsDescription() .\n    \" in your basket. Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
+            "initialOffset": 41
+        },
+        {
+            "authorLogin": "pronskiy",
+            "taskId": "0-9",
             "taskName": "Simple: HTTP request",
             "fileName": "GetRequest.http",
             "initialCode": "",
@@ -74,7 +83,7 @@
         },
         {
             "authorLogin": "lene",
-            "taskId": "0-9",
+            "taskId": "0-10",
             "taskName": "Simple: Foreach",
             "fileName": "Foreach.php",
             "initialCode": "<?php\n\n$tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\n\n",
@@ -83,7 +92,7 @@
         },
         {
             "authorLogin": "bzixilu",
-            "taskId": "0-10",
+            "taskId": "0-11",
             "taskName": "Simple: Surround with condition",
             "fileName": "Odd.php",
             "initialCode": "<?php\n\n$tasks = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);\n\nforeach ($tasks as $task) {\n    echo \"Got $task\\n\";\n}",
@@ -92,7 +101,7 @@
         },
         {
             "authorLogin": "lene",
-            "taskId": "0-11",
+            "taskId": "0-12",
             "taskName": "Simple: Introduce new parameter",
             "fileName": "NewParameter.php",
             "initialCode": "<?php\n\nnamespace Importer {\n    class Importer\n    {\n        public function __construct(\\Importable\\ImportMe $class)\n        {\n        }\n    }\n}\n\n\nnamespace Importable {\n    class ImportMe\n    {\n\n    }\n}",
@@ -101,7 +110,7 @@
         },
         {
             "authorLogin": "lene&kirill",
-            "taskId": "0-12",
+            "taskId": "0-13",
             "taskName": "Simple: Completion with dot",
             "fileName": "CompletionWithDot.php",
             "initialCode": "<?php\n\nnew MyCla\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
@@ -110,7 +119,7 @@
         },
         {
             "authorLogin": "lene&kirill",
-            "taskId": "0-13",
+            "taskId": "0-14",
             "taskName": "Simple: Replacing competion",
             "fileName": "ReplacingCompletion.php",
             "initialCode": "<?php\n\nvar_dump('Tab me');",

@@ -50,43 +50,50 @@
       "source": "refactoring/ExtractVariable.php"
     },
     {
-      "authorLogin": "pronskiy",
+      "authorLogin": "lene",
       "taskId": "0-8",
+      "taskName": "Simple: Reuse code",
+      "fileName": "ReuseCode.php",
+      "source": "refactoring/ExtractFunction.php"
+    },
+    {
+      "authorLogin": "pronskiy",
+      "taskId": "0-9",
       "taskName": "Simple: HTTP request",
       "fileName": "GetRequest.http",
       "source": "liveTemplates/GetRequest.http"
     },
     {
       "authorLogin": "lene",
-      "taskId": "0-9",
+      "taskId": "0-10",
       "taskName": "Simple: Foreach",
       "fileName": "Foreach.php",
       "source": "liveTemplates/Foreach.php"
     },
     {
       "authorLogin": "bzixilu",
-      "taskId": "0-10",
+      "taskId": "0-11",
       "taskName": "Simple: Surround with condition",
       "fileName": "Odd.php",
       "source": "surroundWith/ConditionOdd.php"
     },
     {
       "authorLogin": "lene",
-      "taskId": "0-11",
+      "taskId": "0-12",
       "taskName": "Simple: Introduce new parameter",
       "fileName": "NewParameter.php",
       "source": "altEnter/IntroduceNewParameter.php"
     },
     {
       "authorLogin": "lene&kirill",
-      "taskId": "0-12",
+      "taskId": "0-13",
       "taskName": "Simple: Completion with dot",
       "fileName": "CompletionWithDot.php",
       "source": "completion/CompletionWithDot.php"
     },
     {
       "authorLogin": "lene&kirill",
-      "taskId": "0-13",
+      "taskId": "0-14",
       "taskName": "Simple: Replacing competion",
       "fileName": "ReplacingCompletion.php",
       "source": "completion/ReplacingCompletion.php"
