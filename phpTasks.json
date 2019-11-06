@@ -52,7 +52,7 @@
     {
       "authorLogin": "lene&kirill",
       "taskId": "0-12",
-      "taskName": "Simple: Replacing competion",
+      "taskName": "Simple: Replacing completion",
       "fileName": "ReplacingCompletion.php",
       "source": "completion/ReplacingCompletion.php"
     },

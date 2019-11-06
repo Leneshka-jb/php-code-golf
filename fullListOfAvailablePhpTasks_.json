@@ -1,0 +1,184 @@
+{
+    "tasks": [
+        {
+            "authorLogin": "lene",
+            "taskId": "0-1",
+            "taskName": "Simple: Implement interface",
+            "fileName": "ImplementInterface.php",
+            "initialCode": "<?php\n\ninterface WorldSaver\n{\n    public function makeEverythingWork();\n\n    public function readUsersMind($user);\n\n    public function implementUsersDreams();\n}\n\nclass Developer implements \n{\n\n}",
+            "targetCode": "<?php\n\ninterface WorldSaver\n{\n    public function makeEverythingWork();\n\n    public function readUsersMind($user);\n\n    public function implementUsersDreams();\n}\n\nclass Developer implements WorldSaver\n{\n\n    public function makeEverythingWork()\n    {\n        \/\/ TODO: Implement makeEverythingWork() method.\n    }\n\n    public function readUsersMind($user)\n    {\n        \/\/ TODO: Implement readUsersMind() method.\n    }\n\n    public function implementUsersDreams()\n    {\n        \/\/ TODO: Implement implementUsersDreams() method.\n    }\n}",
+            "initialOffset": 190
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-2",
+            "taskName": "Simple: Generate method",
+            "fileName": "GenerateMethod.php",
+            "initialCode": "<?php\n\nclass Printer\n{\n    public function printGreeting(string $name)\n    {\n        $this->printText(\"Hello, \" . $name);\n    }\n}",
+            "targetCode": "<?php\n\nclass Printer\n{\n    public function printGreeting(string $name)\n    {\n        $this->printText(\"Hello, \" . $name);\n    }\n\n    private function printText(string $string)\n    {\n        echo $string;\n    }\n}",
+            "initialOffset": 92
+        },
+        {
+            "authorLogin": "bzixilu",
+            "taskId": "0-3",
+            "taskName": "Simple: Delete unused method",
+            "fileName": "DeleteUnusedMethod.php",
+            "initialCode": "<?php\n\nclass DeleteUnusedMethod\n{\n    private function unusedMethod() {\n        \/\/this method is not used any more\n    }\n}",
+            "targetCode": "<?php\n\nclass DeleteUnusedMethod\n{\n}",
+            "initialOffset": 55
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-4",
+            "taskName": "Simple: Import namespace",
+            "fileName": "ImportNamespace.php",
+            "initialCode": "<?php\n\nnamespace CurrentNamespace {\n    new ClassINeed;\n}\n\nnamespace FancyNamespaceWithTooManySymbolsInName {\n    class ClassINeed\n    {\n    }\n}",
+            "targetCode": "<?php\n\nnamespace CurrentNamespace {\n\n    use FancyNamespaceWithTooManySymbolsInName\\ClassINeed;\n\n    new ClassINeed;\n}\n\nnamespace FancyNamespaceWithTooManySymbolsInName {\n    class ClassINeed\n    {\n    }\n}",
+            "initialOffset": 54
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-5",
+            "taskName": "Simple: Update PHPDoc",
+            "fileName": "UpdatePHPDoc.php",
+            "initialCode": "<?php\n\n\/**\n * @param array $params\n *\/\nfunction changedFunction(array $params, int $index): float\n{\n    if ($index < 0) {\n        throw new Exception($index);\n    }\n    return $params[$index];\n}",
+            "targetCode": "<?php\n\n\/**\n * @param array $params\n * @param int $index\n * @return float\n * @throws Exception\n *\/\nfunction changedFunction(array $params, int $index): float\n{\n    if ($index < 0) {\n        throw new Exception($index);\n    }\n    return $params[$index];\n}",
+            "initialOffset": 38
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-6",
+            "taskName": "Simple: Cleanup FQNs",
+            "fileName": "Cleanup.php",
+            "initialCode": "<?php\n\nnamespace Impl {\n    function handle(): \\Some\\Very\\Long\\Name\\Entity\n    {\n       return new \\Some\\Very\\Long\\Name\\Element();\n    }\n}\n\nnamespace Some\\Very\\Long\\Name {\n    interface Entity\n    {\n    }\n\n    class Element implements Entity\n    {\n    }\n}",
+            "targetCode": "<?php\n\nnamespace Impl {\n\n    use Some\\Very\\Long\\Name\\Element;\n    use Some\\Very\\Long\\Name\\Entity;\n\n    function handle(): Entity\n    {\n        return new Element();\n    }\n}\n\nnamespace Some\\Very\\Long\\Name {\n    interface Entity\n    {\n    }\n\n    class Element implements Entity\n    {\n    }\n}",
+            "initialOffset": 115
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-7",
+            "taskName": "Simple: Reuse result",
+            "fileName": "ReuseResult.php",
+            "initialCode": "<?php\n\n$title = getSizeOfBasket() . \" inside\";\n$description = \"There are \" . getSizeOfBasket() . \"in your basket\";\n$promo = \"You have \" . getSizeOfBasket() . \" in your basket. \n    Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
+            "targetCode": "<?php\n\n$size = getSizeOfBasket();\n$title = $size . \" inside\";\n$description = \"There are \" . $size . \"in your basket\";\n$promo = \"You have \" . $size . \" in your basket. \n    Buy 1 more and get 10% discount!\";\n\nfunction getSizeOfBasket()\n{\n    return sizeof(array(\"Chips\", \"Juice\", \"Ice-cream\"));\n}",
+            "initialOffset": 16
+        },
+        {
+            "authorLogin": "pronskiy",
+            "taskId": "0-8",
+            "taskName": "Simple: HTTP request",
+            "fileName": "GetRequest.http",
+            "initialCode": "",
+            "targetCode": "GET http:\/\/httpbin.org\/uuid\nAccept: application\/json\n\n###",
+            "initialOffset": 0
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-9",
+            "taskName": "Simple: Foreach",
+            "fileName": "Foreach.php",
+            "initialCode": "<?php\n\n$tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\n\n",
+            "targetCode": "<?php\n\n$tasks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];\n\nforeach ($tasks as $task) {\n    echo \"Got $task\";\n}",
+            "initialOffset": 50
+        },
+        {
+            "authorLogin": "bzixilu",
+            "taskId": "0-10",
+            "taskName": "Simple: Surround with condition",
+            "fileName": "Odd.php",
+            "initialCode": "<?php\n\n$tasks = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);\n\nforeach ($tasks as $task) {\n    echo \"Got $task\\n\";\n}",
+            "targetCode": "<?php\n\n$tasks = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);\n\nforeach ($tasks as $task) {\n    if ($task % 2 == 0) {\n        echo \"Got $task\\n\";\n    }\n}",
+            "initialOffset": 92
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-11",
+            "taskName": "Simple: Introduce new parameter",
+            "fileName": "NewParameter.php",
+            "initialCode": "<?php\n\nnamespace Importer {\n    class Importer\n    {\n        public function __construct(\\Importable\\ImportMe $class)\n        {\n        }\n    }\n}\n\n\nnamespace Importable {\n    class ImportMe\n    {\n\n    }\n}",
+            "targetCode": "<?php\n\nnamespace Importer {\n\n    use Importable\\ImportMe;\n\n    class Importer\n    {\n        \/**\n         * @var ImportMe\n         *\/\n        private $class;\n\n        \/**\n         * Importer constructor.\n         * @param ImportMe $class\n         *\/\n        public function __construct(ImportMe $class)\n        {\n            $this->class = $class;\n        }\n    }\n}\n\n\nnamespace Importable {\n    class ImportMe\n    {\n\n    }\n}",
+            "initialOffset": 101
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-12",
+            "taskName": "Simple: Completion with dot",
+            "fileName": "CompletionWithDot.php",
+            "initialCode": "<?php\n\nnew MyCla\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
+            "targetCode": "<?php\n\n(new MyClass())->perform();\n\nclass MyClass\n{\n    function perform()\n    {\n    }\n}\n\nclass MyClassEx\n{\n}",
+            "initialOffset": 16
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-13",
+            "taskName": "Simple: Replacing completion",
+            "fileName": "ReplacingCompletion.php",
+            "initialCode": "<?php\n\nvar_dump('Tab me');",
+            "targetCode": "<?php\n\nvar_export('Tab me');",
+            "initialOffset": 11
+        },
+        {
+            "authorLogin": "pronskiy",
+            "taskId": "0-21",
+            "taskName": "Medium: String juggling",
+            "fileName": "StringJuggling.php",
+            "initialCode": "<?php\n\necho 'There are 5 monkeys in the tree.';\n\necho sprintf('The %2$s contains %1$d monkeys.\nThat\\'s a nice %2$s full of %1$d monkeys.', $num, $location);",
+            "targetCode": "<?php\n\n$num = '5';\n$location = 'tree';\necho sprintf(\"There are %s monkeys in the %s.\", $num, $location);\n\necho \"The {$location} contains {$num} monkeys.\nThat's a nice {$location} full of {$num} monkeys.\";",
+            "initialOffset": 12
+        },
+        {
+            "authorLogin": "pronskiy",
+            "taskId": "0-22",
+            "taskName": "Medium: Immutable DTO",
+            "fileName": "ImmutableDTO.php",
+            "initialCode": "<?php\n\nclass Order\n{\n    public $id;\n\n    public $date;\n}",
+            "targetCode": "<?php\n\nclass Order\n{\n    \/** @var int *\/\n    private $id;\n\n    \/** @var DateTimeImmutable *\/\n    private $date;\n\n    \/**\n     * Order constructor.\n     * @param int $id\n     * @param DateTimeImmutable $date\n     *\/\n    public function __construct(int $id, DateTimeImmutable $date)\n    {\n        $this->id = $id;\n        $this->date = $date;\n    }\n\n    \/**\n     * @return int\n     *\/\n    public function getId(): int\n    {\n        return $this->id;\n    }\n\n    \/**\n     * @return DateTimeImmutable\n     *\/\n    public function getDate(): DateTimeImmutable\n    {\n        return $this->date;\n    }\n}",
+            "initialOffset": 25
+        },
+        {
+            "authorLogin": "pronskiy",
+            "taskId": "0-23",
+            "taskName": "Medium: Service injection",
+            "fileName": "ServiceInjection.php",
+            "initialCode": "<?php\nnamespace ServiceInjection;\n\nclass Controller\n{\n    \/**\n     * Controller constructor.\n     *\/\n    public function __construct()\n    {\n    }\n\n    public function action()\n    {\n        $service->process($order);\n    }\n}\n\nclass Service\n{\n    public function process(Order $order)\n    {\n        \/\/ =^_^= \\\\\n    }\n}\n\nclass Order\n{\n}",
+            "targetCode": "<?php\nnamespace ServiceInjection;\n\nclass Controller\n{\n    \/** @var Service *\/\n    private $service;\n\n    \/**\n     * Controller constructor.\n     * @param Service $service\n     *\/\n    public function __construct(Service $service)\n    {\n        $this->service = $service;\n    }\n\n    public function action($order)\n    {\n        $this->service->process($order);\n    }\n}\n\nclass Service\n{\n    public function process(Order $order)\n    {\n        \/\/ =^_^= \\\\\n    }\n}\n\nclass Order\n{\n}",
+            "initialOffset": 197
+        },
+        {
+            "authorLogin": "lene",
+            "taskId": "0-30",
+            "taskName": "Probe: DTO",
+            "fileName": "DTO.php",
+            "initialCode": "<?php\n\nclass Order\n{\n    \n}",
+            "targetCode": "<?php\n\nclass Order\n{\n    \/**\n     * @var int\n     *\/\n    private $id;\n\n    \/**\n     * @var DateTimeImmutable\n     *\/\n    private $date;\n\n    \/**\n     * Order constructor.\n     * @param int $id\n     * @param DateTimeImmutable $date\n     *\/\n    public function __construct(int $id, DateTimeImmutable $date)\n    {\n        $this->id = $id;\n        $this->date = $date;\n    }\n\n    \/**\n     * @return int\n     *\/\n    public function getId(): int\n    {\n        return $this->id;\n    }\n\n    \/**\n     * @param int $id\n     *\/\n    public function setId(int $id): void\n    {\n        $this->id = $id;\n    }\n\n    \/**\n     * @return DateTimeImmutable\n     *\/\n    public function getDate(): DateTimeImmutable\n    {\n        return $this->date;\n    }\n\n    \/**\n     * @param DateTimeImmutable $date\n     *\/\n    public function setDate(DateTimeImmutable $date): void\n    {\n        $this->date = $date;\n    }\n}",
+            "initialOffset": 25
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-40",
+            "taskName": "Demo: Completion with variable intoduction",
+            "fileName": "CompletionWithExtractVariable.php",
+            "initialCode": "<?php\n\n\/**\n *  Invoke extracting new variable (Ctrl+Alt+V\/Cmd+Alt+V) during completion\n *\/\nnew MyCla\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
+            "targetCode": "<?php\n\n\/**\n *  Invoke extracting new variable (Ctrl+Alt+V\/Cmd+Alt+V) during completion\n *\/\n$myClass = new MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
+            "initialOffset": 100
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-41",
+            "taskName": "Demo: Complete current statement",
+            "fileName": "CompleteCurrentStatement.php",
+            "initialCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyCla\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
+            "targetCode": "<?php\n\n\/**\n *  Complete whole statement with Ctrl+Shift+Enter\/Cmd+Shift+Enter\n *\/\n$a = new MyClass();\n\nclass MyClass\n{\n}\n\nclass MyClassEx\n{\n}",
+            "initialOffset": 96
+        },
+        {
+            "authorLogin": "lene&kirill",
+            "taskId": "0-42",
+            "taskName": "Demo: Completion with alias",
+            "fileName": "CompletionWithAlias.php",
+            "initialCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    $a = new MyCla\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",
+            "targetCode": "<?php\n\nnamespace {\n\n\/\/ Complete with class alias invoking Alt+Enter on completion list\n\n    use TheNamespace\\MyClass as MyClassAlias;\n\n    $a = new MyClassAlias();\n}\n\nnamespace TheNamespace {\n    class MyClass\n    {\n    }\n}",
+            "initialOffset": 106
+        }
+    ]
+}
