@@ -120,7 +120,7 @@
         {
             "authorLogin": "lene&kirill",
             "taskId": "0-14",
-            "taskName": "Simple: Replacing competion",
+            "taskName": "Simple: Replacing completion",
             "fileName": "ReplacingCompletion.php",
             "initialCode": "<?php\n\nvar_dump('Tab me');",
             "targetCode": "<?php\n\nvar_export('Tab me');",
